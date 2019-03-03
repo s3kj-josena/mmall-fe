@@ -10,6 +10,7 @@ var getHtmlConfig = function(name){
         filename : 'view/'+name+'.html',
         // 模板的路径
         template : './src/view/'+name+'.html',
+        favicon  : './favicon.ico',
         // 自动注入
         inject : true,
         hash : true,
@@ -31,6 +32,7 @@ var configs = {
     },
     resolve : {
         alias : {
+            node_modules    : __dirname + '/node_modules',
             util    : __dirname + '/src/util',
             service : __dirname + '/src/service',
             image   : __dirname + '/src/image',
