@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.w{
+    width: 1080px;
+    margin: 0 auto;
+    background: #eee;
+}
+.link{
+    text-decoration: none;
+    color: #666;
+}
+.link:hover{
+    color: #c60023;
+}
+.header .left{
+    float: left;
+}
+.header .right{
+    float: right;
+}
+li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 5px;
+}
+body{
+    background: url('../../image/bg.jpg');
+}
