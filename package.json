@@ -1,0 +1,22 @@
+{
+  "name": "mmall-fe",
+  "version": "1.0.0",
+  "description": "mmall",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s3kj-josena/mmall-fe.git"
+  },
+  "author": "josena",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/s3kj-josena/mmall-fe/issues"
+  },
+  "homepage": "https://github.com/s3kj-josena/mmall-fe#readme",
+  "devDependencies": {
+    "webpack": "^1.15.0"
+  }
+}
