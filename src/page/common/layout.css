@@ -2,10 +2,12 @@
     padding: 0;
     margin: 0;
 }
+body{
+    background: #f6f6f6;
+}
 .w{
     width: 1080px;
     margin: 0 auto;
-    background: #eee;
 }
 .link{
     text-decoration: none;
@@ -14,17 +16,32 @@
 .link:hover{
     color: #c60023;
 }
-.header .left{
-    float: left;
-}
-.header .right{
-    float: right;
-}
 li{
     list-style-type: none;
     display: inline-block;
-    margin-right: 5px;
+    margin-right: 10px;
 }
-body{
-    background: url('../../image/bg.jpg');
+.btn{
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: #c60023;
+    border: none;
+    outline: none;
+}
+input{
+    outline: none;
+}
+.clear{
+    clear: both;
+}
+.footer{
+    text-align: center;
+    margin-top: 10px;
+    line-height: 40px;
+    color: #666;
+}
+.footer a{
+    margin: 0 15px;
 }

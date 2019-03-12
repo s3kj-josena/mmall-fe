@@ -1,4 +1,4 @@
 'use strict';
 require('./index.css');
 
-console.log('nav-simple/index.js');
+console.log('nav/index.js');
