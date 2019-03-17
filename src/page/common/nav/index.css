@@ -7,9 +7,14 @@
 .header .left{
     float: left;
 }
+.header .left .user.login{
+    display: none;
+}
 .header .right{
     float: right;
 }
-.header .left a,.header .right a{
+.header .left a,
+.header .left span,
+.header .right a{
     color: #888;
 }

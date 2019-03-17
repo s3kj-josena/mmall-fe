@@ -12,7 +12,7 @@ var _user = {
             error   : reject
         });
     },
-    // 检查用户名是否有效
+    // 检查用户名是否有效(注册的,用户名已存在则返回false)
     checkUserName : function(username, resolve, reject){
         _mm.request({
             url     : _mm.getServerUrl('/user/check_valid.do'),
@@ -35,7 +35,7 @@ var _user = {
             error   : reject
         });
     },
-    // 检查登录状态
+    // 检查登录状态(显示欢迎某某)
     checkLogin : function(resolve, reject){
         _mm.request({
             url     : _mm.getServerUrl('/user/get_user_info.do'),

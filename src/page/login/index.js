@@ -41,15 +41,10 @@ var login = {
         validateResult = _this.formValidate(formData);
         // 验证通过,跳转页面
         if(validateResult.status){
-            // 用户名是否存在
-            _user.checkUserName(formData.username, function(res){
-                _user.login(formData, function(res){
-                    window.location.href = _mm.getUrlParam('redirect') || './index.html';
-                }, function(errMsg){
-                    formError.show(errMsg);
-                });
+            _user.login(formData, function(res){
+                window.location.href = _mm.getUrlParam('redirect') || './index.html';
             }, function(errMsg){
-                formError.show('用户名不存在!');
+                formError.show(errMsg);
             });
         }else{
             // 验证不通过,显示错误提示信息

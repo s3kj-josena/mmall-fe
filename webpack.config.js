@@ -22,6 +22,7 @@ var configs = {
         'common' : ['./src/page/common/index.js'],
         'index' : ['./src/page/index/index.js'],
         'login' : ['./src/page/login/index.js'],
+        'register' : ['./src/page/register/index.js'],
         'list' : ['./src/page/list/index.js'],
         'detail' : ['./src/page/detail/index.js']
     },
@@ -57,6 +58,7 @@ var configs = {
         new ExtractTextPlugin("css/[name].css"),
         new HtmlWebpackPlugin(getHtmlConfig('index')),
         new HtmlWebpackPlugin(getHtmlConfig('login')),
+        new HtmlWebpackPlugin(getHtmlConfig('register')),
         new HtmlWebpackPlugin(getHtmlConfig('list')),
         new HtmlWebpackPlugin(getHtmlConfig('detail')),
     ]

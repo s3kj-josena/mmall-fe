@@ -1,0 +1,99 @@
+.header-simple{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+}
+.header-simple .logo{
+    margin-right: 20px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #c60023;
+    text-decoration: none;
+}
+.user-wrap{
+    padding: 40px 0;
+    background: #e72955;
+}
+.user-wrap .user-con{
+    position: relative;
+    margin: 0 auto;
+    width: 400px;
+    background: #fff;
+}
+.user-wrap .user-con .user-title{
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    color: #666;
+}
+.user-wrap .user-con .user-box{
+    padding: 20px;
+}
+.user-wrap .user-con .user-box .err-item{
+    position: relative;
+    padding: 4px 0 4px 40px;
+    margin-bottom: 10px;
+    border: 1px solid red;
+    background: #fde9e9;
+    color: red;
+    display: none;
+}
+.user-wrap .user-con .user-box .err-item .err-icon{
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    margin-top: -7px;
+    font-size: 14px;
+}
+.user-wrap .user-con .user-box .user-item{
+    position: relative;
+    border: 1px solid #bdbdbd;
+    margin-bottom: 20px;
+}
+.user-wrap .user-con .user-box .user-item .user-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    line-height: 36px;
+    background: #f3f3f3;
+    color: #d3d3d3;
+    font-size: 18px;
+    text-align: center;
+    border-right: 1px solid #bdbdbd;
+}
+.user-wrap .user-con .user-box .user-item .user-content{
+    padding: 10px 0 10px 50px;
+    width: 308px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 15px;
+    color: #333;
+    border: none;
+    outline: none;
+}
+.user-wrap .user-con .user-box .user-btn{
+    display: block;
+    padding: 6px 0;
+    width: 100%;
+    text-align: center;
+    background: #e4393c;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    -khtml-user-select:none;
+    user-select:none;
+}
+.user-wrap .user-con .user-box .link-item{
+    margin: 15px auto 0;
+    text-align: right;
+    color: #666;
+}
