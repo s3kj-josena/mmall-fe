@@ -20,7 +20,10 @@ var getHtmlConfig = function(name){
 var configs = {
     entry : {
         'common' : ['./src/page/common/index.js'],
-        'index' : ['./src/page/index/index.js']
+        'index' : ['./src/page/index/index.js'],
+        'login' : ['./src/page/login/index.js'],
+        'list' : ['./src/page/list/index.js'],
+        'detail' : ['./src/page/detail/index.js']
     },
     output : {
         path : __dirname+'/dist/',
@@ -42,7 +45,8 @@ var configs = {
     module : {
         loaders : [
             {test: /\.css$/, loader:ExtractTextPlugin.extract("style-loader","css-loader")},
-            {test:/\.(gif|png|jpg|woff|svg|eot|ttf)\??.*$/, loader:'url-loader?limit=100&name=resource/[name].[ext]'}
+            {test:/\.(gif|png|jpg|woff|svg|eot|ttf)\??.*$/, loader:'url-loader?limit=100&name=resource/[name].[ext]'},
+            {test:/\.string$/,loader: 'html-loader'}
         ]
     },
     plugins : [
@@ -52,7 +56,9 @@ var configs = {
         }),
         new ExtractTextPlugin("css/[name].css"),
         new HtmlWebpackPlugin(getHtmlConfig('index')),
-        new HtmlWebpackPlugin(getHtmlConfig('login'))
+        new HtmlWebpackPlugin(getHtmlConfig('login')),
+        new HtmlWebpackPlugin(getHtmlConfig('list')),
+        new HtmlWebpackPlugin(getHtmlConfig('detail')),
     ]
 }
 // if('dev' === WEBPACK_ENV){

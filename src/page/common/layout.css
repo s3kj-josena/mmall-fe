@@ -12,9 +12,13 @@ body{
 .link{
     text-decoration: none;
     color: #666;
+    cursor: pointer;
 }
 .link:hover{
     color: #c60023;
+}
+a{
+    text-decoration: none;
 }
 li{
     list-style-type: none;
@@ -22,13 +26,18 @@ li{
     margin-right: 10px;
 }
 .btn{
+    display: inline-block;
     padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    border: none;
+    background: #c60023;
     font-size: 18px;
     font-weight: bold;
     color: #fff;
-    background: #c60023;
-    border: none;
     outline: none;
+    cursor: pointer;
 }
 input{
     outline: none;
@@ -44,4 +53,14 @@ input{
 }
 .footer a{
     margin: 0 15px;
+}
+.loading{
+    margin: 10px auto;
+    display: block;
+    width: 65px;
+    height: 65px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: url(../../image/icon/loading.gif) no-repeat;
+    opacity: .6;
 }

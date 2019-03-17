@@ -10,28 +10,6 @@
 .header .right{
     float: right;
 }
-.logo{
-    font-size: 35px;
-    font-weight: bold;
-    color: #c60023;
-    margin-left: 70px;
-}
-.search{
-    display: inline-block;
-    margin: 40px 0 30px 80px;
-    position: relative;
-}
-.search .search-input{
-    width: 500px;
-    height: 43px;
-    padding: 0 10px;
-    border: 2px solid #c60023;
-}
-.search .search-btn{
-    height: 47px;
-    width: 80px;
-    line-height: 47px;
-    position: absolute;
-    top: 0;
-    left: 521px;
+.header .left a,.header .right a{
+    color: #888;
 }

@@ -1,0 +1,26 @@
+<div class="banner">
+    <a href="./list.html?categoryId=100021" target="_blank">
+        <img src="../../image/banner/banner1.jpg" alt="banner1" class="banner-img">
+    </a>
+    <a href="./list.html?categoryId=100030" target="_blank">
+        <img src="../../image/banner/banner2.jpg" class="banner-img">
+    </a>
+    <a href="./list.html?categoryId=100016" target="_blank">
+        <img src="../../image/banner/banner3.jpg" alt="banner3" class="banner-img">
+    </a>
+    <a href="./list.html?categoryId=100001" target="_blank">
+        <img src="../../image/banner/banner4.jpg" alt="banner4" class="banner-img">
+    </a>
+</div>
+<ol class="dots">
+    <li class="dot active"></li>
+    <li class="dot"></li>
+    <li class="dot"></li>
+    <li class="dot"></li>
+</ol>
+<div class="banner-arrow prev">
+    <i class="fa fa-angle-left"></i>
+</div>
+<div class="banner-arrow next">
+    <i class="fa fa-angle-right"></i>
+</div>

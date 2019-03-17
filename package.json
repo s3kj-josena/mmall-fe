@@ -4,7 +4,7 @@
   "description": "mmall",
   "main": "webpack.config.js",
   "scripts": {
-    "dev" : "set WEBPACK_ENV=dev && webpack-dev-server --inline --port 8088",
+    "dev": "set WEBPACK_ENV=dev && webpack-dev-server --inline --port 8088",
     "dist": "set WEBPACK_ENV=online && webpack -p"
   },
   "repository": {
@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "font-awesome": "^4.7.0",
+    "hogan": "^1.0.2",
     "hogan.js": "^3.0.2"
   }
 }

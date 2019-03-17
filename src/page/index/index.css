@@ -67,7 +67,7 @@
     border-radius: 6px;
     border: 2px solid #fff;
     opacity: 0.5;
-    transition: background .5s,opacity .5s;
+    /* transition: background .5s,opacity .5s; */
     cursor: pointer;
 }
 .banner-box .dots .dot.active{
