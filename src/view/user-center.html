@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <%= require('html-loader!./layout/head-common.html') %>
-    <title>商品详情 -- MMall电商平台</title>
+    <title>个人中心 -- MMall电商平台</title>
 </head>
 <body>
     <%= require('html-loader!./layout/nav.html') %>
@@ -11,14 +11,21 @@
     <div class="crumbs">
         <div class="w">
             <a href="./index.html" class="crumbs-item link">MMall</a>>
-            <span class="link">商品详情</span>
+            <span class="link">个人中心</span>
         </div>
     </div>
+
     <div class="page-wrap w">
-        
+    <%= require('html-loader!./layout/nav-side.html')  %>
+        <div class="content with-nav">
+            <div class="panel">
+                <div class="panel-title">个人中心</div>
+                <div class="panel-body">
+                    <div class="loading"></div>
+                </div>
+            </div>
+        </div>
     </div>
-
-
     <%= require('html-loader!./layout/footer.html') %>
 </body>
 </html>

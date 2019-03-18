@@ -24,6 +24,7 @@ var configs = {
         'login' : ['./src/page/login/index.js'],
         'register' : ['./src/page/register/index.js'],
         'pass-reset' : ['./src/page/pass-reset/index.js'],
+        'user-center' : ['./src/page/user-center/index.js'],
         'list' : ['./src/page/list/index.js'],
         'detail' : ['./src/page/detail/index.js']
     },
@@ -61,6 +62,7 @@ var configs = {
         new HtmlWebpackPlugin(getHtmlConfig('login')),
         new HtmlWebpackPlugin(getHtmlConfig('register')),
         new HtmlWebpackPlugin(getHtmlConfig('pass-reset')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-center')),
         new HtmlWebpackPlugin(getHtmlConfig('list')),
         new HtmlWebpackPlugin(getHtmlConfig('detail')),
     ]
