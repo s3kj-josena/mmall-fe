@@ -66,7 +66,7 @@ var _user = {
             error   : reject
         });
     },
-    // 重置密码
+    // 重置密码(忘记密码的找回密码)
     resetPassword : function(userInfo, resolve, reject){
         _mm.request({
             url     : _mm.getServerUrl('/user/forget_reset_password.do'),
