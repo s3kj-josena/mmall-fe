@@ -5,18 +5,6 @@
 body{
     background: #f6f6f6;
 }
-.w{
-    width: 1080px;
-    margin: 0 auto;
-}
-.link{
-    text-decoration: none;
-    color: #666;
-    cursor: pointer;
-}
-.link:hover{
-    color: #c60023;
-}
 a{
     text-decoration: none;
 }
@@ -24,6 +12,54 @@ li{
     list-style-type: none;
     display: inline-block;
     margin-right: 10px;
+}
+img{
+    display: block;
+    border: none;
+}
+label{
+    cursor: pointer;
+}
+input{
+    outline: none;
+}
+.w{
+    width: 1080px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+/* panel */
+.panel{
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #fff;
+}
+.panel .panel-title{
+    padding: 10px;
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+}
+.panel .panel-body{
+    padding: 10px;
+    overflow: hidden;
+}
+.hide{
+    display: none;
+}
+.link{
+    text-decoration: none;
+    color: #999;
+    cursor: pointer;
+}
+.link:hover{
+    color: #e80012;
+}
+.link-text{
+    color: #999;
+    text-decoration: none;
 }
 .btn{
     display: inline-block;
@@ -38,9 +74,13 @@ li{
     color: #fff;
     outline: none;
     cursor: pointer;
+    text-decoration: none;
 }
-input{
-    outline: none;
+.btn-mini{
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    padding: 0 10px;
 }
 .clear{
     clear: both;

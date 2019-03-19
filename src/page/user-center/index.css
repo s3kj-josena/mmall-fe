@@ -15,22 +15,6 @@
     float: left;
     width: 950px;
 }
-.page-wrap .content .panel{
-    padding: 10px;
-    margin-bottom: 10px;
-    background: #fff;
-}
-.page-wrap .content .panel .panel-title{
-    padding: 10px;
-    font-size: 14px;
-    font-weight: bold;
-    color: #666;
-    border-bottom: 1px solid #eee;
-}
-.page-wrap .content .panel .panel-body{
-    padding: 10px 0;
-    overflow: hidden;
-}
 .panel .panel-body .user-info{
     padding: 0 10px;
 }
@@ -45,13 +29,6 @@
     margin-right: 20px;
     height: 30px;
     line-height: 30px;
-}
-.panel .panel-body .user-info .text-line .btn-mini{
-    height: 25px;
-    line-height: 25px;
-    font-size: 12px;
-    padding: 2px 10px;
-    margin-right: 10px;
 }
 .user-info .btn-submit {
     margin-left: 50px;

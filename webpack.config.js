@@ -28,7 +28,8 @@ var configs = {
         'user-center' : ['./src/page/user-center/index.js'],
         'cart' : ['./src/page/cart/index.js'],
         'list' : ['./src/page/list/index.js'],
-        'detail' : ['./src/page/detail/index.js']
+        'detail' : ['./src/page/detail/index.js'],
+        'order-confirm' : ['./src/page/order-confirm/index.js']
     },
     output : {
         path : __dirname+'/dist/',
@@ -69,6 +70,7 @@ var configs = {
         new HtmlWebpackPlugin(getHtmlConfig('cart')),
         new HtmlWebpackPlugin(getHtmlConfig('list')),
         new HtmlWebpackPlugin(getHtmlConfig('detail')),
+        new HtmlWebpackPlugin(getHtmlConfig('order-confirm')),
     ]
 }
 // if('dev' === WEBPACK_ENV){

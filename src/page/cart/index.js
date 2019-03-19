@@ -170,4 +170,5 @@ var page = {
 };
 $(function(){
     page.init();
+    console.log('cart/index.js')
 });
