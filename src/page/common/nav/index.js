@@ -1,14 +1,14 @@
 'use strict';
 require('./index.css');
 var _user = require('service/user-service.js');
-// var _cart = require('service/cart-service.js');
+var _cart = require('service/cart-service.js');
 var _mm = require('util/mm.js');
 
 var nav = {
     init : function(){
         this.bindEvent();
         this.loadUserInfo();
-        // this.loadCartCount();
+        this.loadCartCount();
         return this;
     },
     bindEvent : function(){
@@ -32,13 +32,13 @@ var nav = {
         });
     },
     // 加载购物车数量
-    // loadCartCount : function(){
-    //     _cart.getCartCount(function(res){
-    //         $('.nav .cart-count').text(res || 0);
-    //     }, function(errMsg){
-    //         $('.nav .cart-count').text(0);
-    //     });
-    // }
+    loadCartCount : function(){
+        _cart.getCartCount(function(res){
+            $('.header .cart-count').text(res || 0);
+        }, function(errMsg){
+            $('.header .cart-count').text(0);
+        });
+    }
 }
 module.exports = nav.init();
 console.log('nav/index.js');

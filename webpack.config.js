@@ -26,6 +26,7 @@ var configs = {
         'pass-reset' : ['./src/page/pass-reset/index.js'],
         'pass-update' : ['./src/page/pass-update/index.js'],
         'user-center' : ['./src/page/user-center/index.js'],
+        'cart' : ['./src/page/cart/index.js'],
         'list' : ['./src/page/list/index.js'],
         'detail' : ['./src/page/detail/index.js']
     },
@@ -65,6 +66,7 @@ var configs = {
         new HtmlWebpackPlugin(getHtmlConfig('pass-reset')),
         new HtmlWebpackPlugin(getHtmlConfig('pass-update')),
         new HtmlWebpackPlugin(getHtmlConfig('user-center')),
+        new HtmlWebpackPlugin(getHtmlConfig('cart')),
         new HtmlWebpackPlugin(getHtmlConfig('list')),
         new HtmlWebpackPlugin(getHtmlConfig('detail')),
     ]
