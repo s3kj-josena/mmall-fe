@@ -30,6 +30,7 @@ var configs = {
         'list' : ['./src/page/list/index.js'],
         'detail' : ['./src/page/detail/index.js'],
         'order-confirm' : ['./src/page/order-confirm/index.js'],
+        'payment' : ['./src/page/payment/index.js'],
         'result' : ['./src/page/result/index.js']
     },
     output : {
@@ -72,6 +73,7 @@ var configs = {
         new HtmlWebpackPlugin(getHtmlConfig('list')),
         new HtmlWebpackPlugin(getHtmlConfig('detail')),
         new HtmlWebpackPlugin(getHtmlConfig('order-confirm')),
+        new HtmlWebpackPlugin(getHtmlConfig('payment')),
         new HtmlWebpackPlugin(getHtmlConfig('result')),
     ]
 }
