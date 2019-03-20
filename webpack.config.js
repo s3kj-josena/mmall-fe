@@ -29,7 +29,8 @@ var configs = {
         'cart' : ['./src/page/cart/index.js'],
         'list' : ['./src/page/list/index.js'],
         'detail' : ['./src/page/detail/index.js'],
-        'order-confirm' : ['./src/page/order-confirm/index.js']
+        'order-confirm' : ['./src/page/order-confirm/index.js'],
+        'result' : ['./src/page/result/index.js']
     },
     output : {
         path : __dirname+'/dist/',
@@ -71,6 +72,7 @@ var configs = {
         new HtmlWebpackPlugin(getHtmlConfig('list')),
         new HtmlWebpackPlugin(getHtmlConfig('detail')),
         new HtmlWebpackPlugin(getHtmlConfig('order-confirm')),
+        new HtmlWebpackPlugin(getHtmlConfig('result')),
     ]
 }
 // if('dev' === WEBPACK_ENV){

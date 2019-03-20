@@ -7,9 +7,9 @@ var templateAddressModal = require('./address-modal.string');
 var addressModal = {
     show : function(option){
         // option的绑定
-        this.option         = option;
-        this.option.data    = option.data || {};
-        this.$modalWrap     = $('.modal-wrap');
+        this.option = option;
+        this.option.data = option.data || {};
+        this.$modalWrap = $('.modal-wrap');
         // 渲染页面
         this.loadModal();
         // 绑定事件
@@ -19,13 +19,15 @@ var addressModal = {
         let _this = this;
         // 省份和城市的二级联动
         this.$modalWrap.find('#receiver-province').change(function(){
+            // 获取选中的省份
             let selectedProvince = $(this).val();
+            // 加载该省份的城市列表
             _this.loadCities(selectedProvince);
         });
         // 提交收货地址
         this.$modalWrap.find('.address-btn').click(function(){
             let receiverInfo = _this.getReceiverInfo(),
-                isUpdate     = _this.option.isUpdate;
+                isUpdate = _this.option.isUpdate;
             // 使用新地址，且验证通过
             if(!isUpdate && receiverInfo.status){
                 _address.save(receiverInfo.data, function(res){

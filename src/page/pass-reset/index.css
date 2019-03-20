@@ -1,17 +1,3 @@
-.header-simple{
-    width: 100%;
-    height: 60px;
-    line-height: 60px;
-    border-bottom: 1px solid #ddd;
-    background: #fff;
-}
-.header-simple .logo{
-    margin-right: 20px;
-    font-size: 26px;
-    font-weight: bold;
-    color: #c60023;
-    text-decoration: none;
-}
 .page-wrap{
     padding: 40px 0;
 }

@@ -4,6 +4,7 @@
 }
 body{
     background: #f6f6f6;
+    font: 12px/1.5 tahoma,arial,Microsoft YaHei,sans-serif;
 }
 a{
     text-decoration: none;
@@ -28,6 +29,31 @@ input{
     margin: 0 auto;
     overflow: hidden;
     position: relative;
+}
+/* h1 */
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+/* 简单头部样式,只有一个MMall */
+.header-simple{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+}
+.header-simple .logo{
+    margin-right: 20px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #c60023;
+    text-decoration: none;
 }
 /* panel */
 .panel{
