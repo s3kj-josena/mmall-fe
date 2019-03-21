@@ -33,7 +33,8 @@ var configs = {
         'order-list' : ['./src/page/order-list/index.js'],
         'order-detail' : ['./src/page/order-detail/index.js'],
         'payment' : ['./src/page/payment/index.js'],
-        'result' : ['./src/page/result/index.js']
+        'result' : ['./src/page/result/index.js'],
+        'about' : ['./src/page/about/index.js']
     },
     output : {
         path : __dirname+'/dist/',
@@ -79,6 +80,7 @@ var configs = {
         new HtmlWebpackPlugin(getHtmlConfig('order-detail')),
         new HtmlWebpackPlugin(getHtmlConfig('payment')),
         new HtmlWebpackPlugin(getHtmlConfig('result')),
+        new HtmlWebpackPlugin(getHtmlConfig('about')),
     ]
 }
 // if('dev' === WEBPACK_ENV){
