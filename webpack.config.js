@@ -31,6 +31,7 @@ var configs = {
         'detail' : ['./src/page/detail/index.js'],
         'order-confirm' : ['./src/page/order-confirm/index.js'],
         'order-list' : ['./src/page/order-list/index.js'],
+        'order-detail' : ['./src/page/order-detail/index.js'],
         'payment' : ['./src/page/payment/index.js'],
         'result' : ['./src/page/result/index.js']
     },
@@ -75,6 +76,7 @@ var configs = {
         new HtmlWebpackPlugin(getHtmlConfig('detail')),
         new HtmlWebpackPlugin(getHtmlConfig('order-confirm')),
         new HtmlWebpackPlugin(getHtmlConfig('order-list')),
+        new HtmlWebpackPlugin(getHtmlConfig('order-detail')),
         new HtmlWebpackPlugin(getHtmlConfig('payment')),
         new HtmlWebpackPlugin(getHtmlConfig('result')),
     ]
