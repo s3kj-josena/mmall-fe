@@ -13,8 +13,6 @@
 .header .right{
     float: right;
 }
-.header .left a,
-.header .left span,
-.header .right a{
-    color: #888;
+.link:hover{
+    color: #c60023;
 }

@@ -13,7 +13,7 @@ var _payment = {
             error   : reject
         });
     },
-    // 获取订单状态
+    // 查询订单支付状态
     getPaymentStatus : function(orderNumber, resolve, reject){
         _mm.request({
             url     : _mm.getServerUrl('/order/query_order_pay_status.do'),

@@ -21,6 +21,17 @@ img{
 label{
     cursor: pointer;
 }
+table{
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+tr{
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
 input{
     outline: none;
 }
@@ -75,18 +86,6 @@ h1 {
 .hide{
     display: none;
 }
-.link{
-    text-decoration: none;
-    color: #999;
-    cursor: pointer;
-}
-.link:hover{
-    color: #e80012;
-}
-.link-text{
-    color: #999;
-    text-decoration: none;
-}
 .btn{
     display: inline-block;
     padding: 0 20px;
@@ -129,4 +128,16 @@ h1 {
     border-radius: 5px;
     background: url(../../image/icon/loading.gif) no-repeat;
     opacity: .6;
+}
+.link{
+    text-decoration: none;
+    color: #999;
+    cursor: pointer;
+}
+.link-text{
+    color: #999;
+    text-decoration: none;
+}
+.link:hover{
+    color: #e80012;
 }

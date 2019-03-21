@@ -2,7 +2,7 @@
 var _mm = require('util/mm.js');
 
 var _order = {
-    // 获取商品列表
+    // 获取订单的商品列表
     getProductList : function(resolve, reject){
         _mm.request({
             url     : _mm.getServerUrl('/order/get_order_cart_product.do'),
@@ -10,7 +10,7 @@ var _order = {
             error   : reject
         });
     },
-    // 提交订单
+    // 创建订单
     createOrder : function(orderInfo, resolve, reject){
         _mm.request({
             url     : _mm.getServerUrl('/order/create.do'),
@@ -19,7 +19,7 @@ var _order = {
             error   : reject
         });
     },
-    // 获取订单列表
+    // 获取所有订单列表
     getOrderList : function(listParam, resolve, reject){
         _mm.request({
             url     : _mm.getServerUrl('/order/list.do'),
@@ -28,7 +28,7 @@ var _order = {
             error   : reject
         });
     },
-    // 获取订单详情
+    // 获取单个订单详情
     getOrderDetail : function(orderNumber, resolve, reject){
         _mm.request({
             url     : _mm.getServerUrl('/order/detail.do'),
