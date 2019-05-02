@@ -25,7 +25,7 @@ var userUpdate = {
         let _this = this;
         // 提交表单
         $(document).on('click', '.btn-submit', function(){
-            // 获取表单信息
+            // 获取表单信息,手机号/邮箱/问题/答案
             let userInfo = {
                 phone       : $.trim($('#phone').val()),
                 email       : $.trim($('#email').val()),

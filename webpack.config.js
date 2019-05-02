@@ -85,8 +85,8 @@ var configs = {
         new HtmlWebpackPlugin(getHtmlConfig('about')),
     ]
 }
-// if('dev' === WEBPACK_ENV){
-//     config.entry.common.push('webpack-dev-server/client?http://localhost:8088/');
-// }
+if('dev' === WEBPACK_ENV){
+    configs.entry.common.push('webpack-dev-server/client?http://localhost:8088/');
+}
 
 module.exports = configs;
