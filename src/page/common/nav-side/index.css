@@ -4,6 +4,8 @@
     min-height: 100px;
 }
 .nav-side .nav-item{
+    width: 100%;
+    margin-left: 50px;
     line-height: 25px;
     font-size: 13px;
 }
